@@ -61,7 +61,7 @@ export default function Positioning() {
                     className="h-6 w-6 text-signal-400 transition-transform duration-300 group-hover:scale-110"
                     strokeWidth={1.5}
                   />
-                  <span className="tabular font-mono text-[11px] text-silver-500">
+                  <span className="tabular font-sans text-[11px] text-silver-500">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                 </div>

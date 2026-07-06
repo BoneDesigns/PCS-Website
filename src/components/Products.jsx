@@ -85,13 +85,13 @@ export default function Products() {
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/45 via-transparent to-transparent" />
                 </div>
 
-                <span className="mt-7 font-mono text-[11px] uppercase tracking-widest2 text-signal-300">
+                <span className="mt-7 font-sans text-[11px] uppercase tracking-widest2 text-signal-300">
                   {product.eyebrow}
                 </span>
                 <h3 className="mt-3 font-display text-2xl font-semibold text-paper">
                   {product.title}
                 </h3>
-                <p className="mt-2 font-mono text-xs uppercase tracking-wide text-silver-500">
+                <p className="mt-2 font-sans text-xs uppercase tracking-wide text-silver-500">
                   {product.formula}
                 </p>
                 <p className="mt-5 text-sm leading-relaxed text-silver-300">

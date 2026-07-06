@@ -32,7 +32,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Premier Chemical Solution LLC.
             All rights reserved.
           </span>
-          <span className="font-mono text-[11px] uppercase tracking-wider">
+          <span className="font-sans text-[11px] uppercase tracking-wider">
             15 Plant Road, Nitro, WV · Flotation Reagents · Custom Blending
           </span>
         </div>

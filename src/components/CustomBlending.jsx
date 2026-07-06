@@ -83,7 +83,7 @@ export default function CustomBlending() {
           {STEPS.map((step, i) => (
             <Reveal key={step.title} delay={i * 0.1}>
               <div className="group h-full bg-graphite-900 p-8 transition-colors duration-300 hover:bg-graphite-800">
-                <span className="tabular font-mono text-[11px] text-signal-300">
+                <span className="tabular font-sans text-[11px] text-signal-300">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <step.icon

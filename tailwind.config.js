@@ -32,7 +32,6 @@ export default {
       fontFamily: {
         display: ["'Archivo'", "sans-serif"],
         sans: ["'Inter'", "sans-serif"],
-        mono: ["'IBM Plex Mono'", "ui-monospace", "monospace"],
       },
       backgroundImage: {
         "dot-grid":

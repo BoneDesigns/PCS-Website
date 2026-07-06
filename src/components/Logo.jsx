@@ -9,7 +9,7 @@ export default function Logo({ className = "", showWordmark = true }) {
       {showWordmark && (
         <span className="font-display text-sm font-semibold leading-tight tracking-tight text-paper">
           PREMIER CHEMICAL
-          <span className="block font-mono text-[10px] font-medium tracking-widest2 text-silver-400">
+          <span className="block font-sans text-[10px] font-medium tracking-widest2 text-silver-400">
             SOLUTION LLC
           </span>
         </span>

@@ -62,7 +62,7 @@ export default function WhyPCS() {
             <Reveal key={reason.title} delay={i * 0.08}>
               <div className="group -mx-4 grid grid-cols-1 items-start gap-4 rounded-xl px-4 py-9 transition-colors duration-300 hover:bg-graphite-800/40 sm:grid-cols-12 sm:gap-6 sm:py-10">
                 <div className="flex items-center gap-4 sm:col-span-5 sm:gap-6">
-                  <span className="tabular font-mono text-xs text-silver-500">
+                  <span className="tabular font-sans text-xs text-silver-500">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <reason.icon

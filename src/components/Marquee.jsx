@@ -31,7 +31,7 @@ export default function Marquee() {
       <div className="flex shrink-0 animate-marquee items-center gap-10 pr-10 [animation-play-state:running] hover:[animation-play-state:paused]">
         {row.map((item, i) => (
           <div key={i} className="flex shrink-0 items-center gap-10">
-            <span className="font-mono text-[11px] font-medium uppercase tracking-widest2 text-silver-400">
+            <span className="font-sans text-[11px] font-medium uppercase tracking-widest2 text-silver-400">
               {item}
             </span>
             <span className="h-1 w-1 rounded-full bg-signal/60" />

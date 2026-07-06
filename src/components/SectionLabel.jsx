@@ -5,7 +5,7 @@ export default function SectionLabel({ children, light = false }) {
         className={`h-px w-8 ${light ? "bg-graphite-600" : "bg-signal"}`}
       />
       <span
-        className={`font-mono text-[11px] font-medium uppercase tracking-widest2 ${
+        className={`font-sans text-[11px] font-medium uppercase tracking-widest2 ${
           light ? "text-graphite-500" : "text-signal-300"
         }`}
       >

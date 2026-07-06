@@ -54,11 +54,11 @@ export default function Markets() {
                   <h3 className="mt-8 font-display text-2xl font-semibold text-paper">
                     {market.title}
                   </h3>
-                  <p className="mt-3 font-mono text-[11px] uppercase leading-relaxed tracking-wide text-silver-500">
+                  <p className="mt-3 font-sans text-[11px] uppercase leading-relaxed tracking-wide text-silver-500">
                     {market.subtitle}
                   </p>
                 </div>
-                <span className="tabular relative mt-10 font-mono text-[11px] text-silver-500">
+                <span className="tabular relative mt-10 font-sans text-[11px] text-silver-500">
                   {String(i + 1).padStart(2, "0")} / {MARKETS.length}
                 </span>
               </div>

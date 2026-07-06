@@ -78,7 +78,7 @@ export default function CTA() {
               <div className="mt-5">
                 <label
                   htmlFor="message"
-                  className="font-mono text-[11px] uppercase tracking-wider text-silver-500"
+                  className="font-sans text-[11px] uppercase tracking-wider text-silver-500"
                 >
                   Tell us about your circuit
                 </label>
@@ -112,7 +112,7 @@ function Field({ label, id, type = "text" }) {
     <div>
       <label
         htmlFor={id}
-        className="font-mono text-[11px] uppercase tracking-wider text-silver-500"
+        className="font-sans text-[11px] uppercase tracking-wider text-silver-500"
       >
         {label}
       </label>

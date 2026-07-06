@@ -59,7 +59,7 @@ export default function Hero() {
           className="flex items-center gap-3"
         >
           <span className="h-px w-8 bg-signal" />
-          <span className="font-mono text-[11px] font-medium uppercase tracking-widest2 text-signal-300">
+          <span className="font-sans text-[11px] font-medium uppercase tracking-widest2 text-signal-300">
             Coal &amp; Hard Rock Mining · Flotation Reagents
           </span>
         </motion.div>
@@ -109,7 +109,7 @@ export default function Hero() {
         >
           <a
             href="#products"
-            className="group mb-4 inline-flex items-center gap-2 font-mono text-[11px] font-medium uppercase tracking-widest2 text-silver-400 transition-colors hover:text-paper"
+            className="group mb-4 inline-flex items-center gap-2 font-sans text-[11px] font-medium uppercase tracking-widest2 text-silver-400 transition-colors hover:text-paper"
           >
             Full Reagent Portfolio
             <ArrowRight
@@ -120,7 +120,7 @@ export default function Hero() {
           <div className="flex flex-wrap items-center gap-x-3 gap-y-2.5">
             {TAGS.map((tag, i) => (
               <span key={tag} className="flex items-center gap-x-3">
-                <span className="font-mono text-[13px] font-medium uppercase tracking-wide text-silver-300">
+                <span className="font-sans text-[13px] font-medium uppercase tracking-wide text-silver-300">
                   {tag}
                 </span>
                 {i < TAGS.length - 1 && (
