@@ -1,0 +1,17 @@
+node_modules
+dist
+.DS_Store
+*.local
+
+# Local Claude Code settings
+.claude/settings.local.json
+
+# Unrelated project living in this folder
+Shae Tate Photography Website/
+
+# Working/reference assets at the repo root (the site's real images live in public/images/)
+/*.png
+/*.jpg
+/*.jpeg
+/*.pdf
+/*.txt

@@ -1,0 +1,19 @@
+export default function Logo({ className = "", showWordmark = true }) {
+  return (
+    <a href="#top" className={`flex items-center gap-3 ${className}`}>
+      <img
+        src="/images/logo-mark.png?v=2"
+        alt="Premier Chemical Solution mark"
+        className="h-12 w-12 object-contain"
+      />
+      {showWordmark && (
+        <span className="font-display text-sm font-semibold leading-tight tracking-tight text-paper">
+          PREMIER CHEMICAL
+          <span className="block font-mono text-[10px] font-medium tracking-widest2 text-silver-400">
+            SOLUTION LLC
+          </span>
+        </span>
+      )}
+    </a>
+  );
+}
