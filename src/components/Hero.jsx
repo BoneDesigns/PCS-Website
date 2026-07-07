@@ -17,23 +17,22 @@ export default function Hero() {
   const reduce = useReducedMotion();
 
   return (
-    <section className="relative flex min-h-screen items-end overflow-hidden bg-ink pt-28">
-      {/* background photo */}
+    <section className="relative flex min-h-screen flex-col overflow-hidden bg-ink md:flex-row md:items-end md:pt-28">
+      {/* hero photo — on mobile it's a clean in-flow band at the top (no text
+          over it), fading into ink where the copy begins; on desktop it's the
+          full-bleed background behind the content. */}
       <motion.div
         initial={{ scale: reduce ? 1 : 1.08, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: reduce ? 0.4 : 1.6, ease: [0.16, 1, 0.3, 1] }}
-        className="absolute inset-x-0 top-0 h-[58vh] md:inset-0 md:h-full"
+        className="relative h-[46vh] min-h-[300px] w-full md:absolute md:inset-0 md:h-full md:min-h-0"
       >
-        {/* On mobile the photo fills only the upper hero and fades into ink,
-            so it shows far more of the scene (less crop) and the copy below
-            sits on a clean dark ground instead of a busy image. */}
         <img
           src="/images/hero-plant.jpg?v=2"
           alt="Premier Chemical Solution tanker truck at a chemical plant at dusk"
           className="h-full w-full object-cover object-[72%_center] md:object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/45 to-ink/10 md:hidden" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/10 to-ink/25 md:hidden" />
         <div className="absolute inset-0 hidden bg-gradient-to-t from-ink via-ink/75 to-ink/30 md:block" />
         <div className="absolute inset-0 hidden bg-gradient-to-r from-ink/90 via-ink/20 to-transparent md:block" />
         {/* cinematic vignette for depth */}
@@ -53,9 +52,9 @@ export default function Hero() {
           style={{ clipPath: "polygon(45% 0, 100% 0, 100% 100%, 75% 100%)" }}
         />
       </div>
-      <div className="absolute inset-0 bg-dot-grid bg-dots opacity-[0.07]" />
+      <div className="absolute inset-0 hidden bg-dot-grid bg-dots opacity-[0.07] md:block" />
 
-      <div className="relative mx-auto w-full max-w-7xl px-6 pb-20 pt-16 lg:px-10 lg:pb-28">
+      <div className="relative mx-auto -mt-14 w-full max-w-7xl px-6 pb-20 md:mt-0 md:pt-16 lg:px-10 lg:pb-28">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
