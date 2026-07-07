@@ -28,10 +28,10 @@ export default function Hero() {
         <img
           src="/images/hero-plant.jpg?v=2"
           alt="Premier Chemical Solution tanker truck at a chemical plant at dusk"
-          className="h-full w-full object-cover object-center"
+          className="h-full w-full object-cover object-[75%_center] md:object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/75 to-ink/30" />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-ink/10 md:via-ink/75 md:to-ink/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink/50 via-ink/10 to-transparent md:from-ink/90 md:via-ink/20" />
         {/* cinematic vignette for depth */}
         <div
           className="absolute inset-0"

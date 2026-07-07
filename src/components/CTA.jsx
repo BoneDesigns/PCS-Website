@@ -51,7 +51,7 @@ export default function CTA() {
                     strokeWidth={1.5}
                   />
                   <span className="text-sm text-silver-300">
-                    premierchemicalsolution.com
+                    premierchemsolution.com
                   </span>
                 </div>
               </div>
