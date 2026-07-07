@@ -56,7 +56,6 @@ export default function Nav() {
 
   return (
     <header
-      id="top"
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
           ? "border-b border-white/10 bg-ink/85 backdrop-blur-md"
@@ -64,7 +63,7 @@ export default function Nav() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
-        <Logo />
+        <Logo onClick={() => setOpen(false)} />
 
         <div className="hidden items-center gap-9 lg:flex">
           {LINKS.map((link) => {

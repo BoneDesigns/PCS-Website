@@ -11,7 +11,7 @@ import Footer from "./components/Footer.jsx";
 
 export default function App() {
   return (
-    <div className="relative min-h-screen bg-ink">
+    <div id="top" className="relative min-h-screen bg-ink">
       <div className="grain-overlay" aria-hidden="true" />
       <Nav />
       <main>

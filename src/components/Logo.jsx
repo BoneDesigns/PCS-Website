@@ -1,6 +1,6 @@
-export default function Logo({ className = "", showWordmark = true }) {
+export default function Logo({ className = "", showWordmark = true, onClick }) {
   return (
-    <a href="#top" className={`flex items-center gap-3 ${className}`}>
+    <a href="#top" onClick={onClick} className={`flex items-center gap-3 ${className}`}>
       <img
         src="/images/logo-mark.png?v=2"
         alt="Premier Chemical Solution mark"
