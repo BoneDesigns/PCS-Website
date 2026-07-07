@@ -33,7 +33,7 @@ export default function Footer() {
             All rights reserved.
           </span>
           <span className="font-sans text-[11px] uppercase tracking-wider">
-            15 Plant Road, Nitro, WV · Flotation Reagents · Custom Blending
+            Nitro, WV · Adger, AL · 205-615-3225 · Flotation Reagents
           </span>
         </div>
       </div>

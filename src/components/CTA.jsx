@@ -1,4 +1,4 @@
-import { MapPin, Globe, Send } from "lucide-react";
+import { MapPin, Phone, Globe, Send } from "lucide-react";
 import Reveal from "./Reveal.jsx";
 import SectionLabel from "./SectionLabel.jsx";
 
@@ -42,8 +42,29 @@ export default function CTA() {
                     strokeWidth={1.5}
                   />
                   <span className="text-sm text-silver-300">
-                    15 Plant Road, Nitro, WV
+                    17 Plant Rd. Nitro, WV 25143
                   </span>
+                </div>
+                <div className="flex items-start gap-3.5">
+                  <MapPin
+                    className="mt-0.5 h-5 w-5 shrink-0 text-signal-400"
+                    strokeWidth={1.5}
+                  />
+                  <span className="text-sm text-silver-300">
+                    16787 Groundhog Rd. Adger, AL 35006
+                  </span>
+                </div>
+                <div className="flex items-start gap-3.5">
+                  <Phone
+                    className="mt-0.5 h-5 w-5 shrink-0 text-signal-400"
+                    strokeWidth={1.5}
+                  />
+                  <a
+                    href="tel:205-615-3225"
+                    className="text-sm text-silver-300 transition-colors hover:text-paper"
+                  >
+                    205-615-3225
+                  </a>
                 </div>
                 <div className="flex items-start gap-3.5">
                   <Globe

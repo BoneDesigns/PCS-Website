@@ -23,18 +23,22 @@ export default function Hero() {
         initial={{ scale: reduce ? 1 : 1.08, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: reduce ? 0.4 : 1.6, ease: [0.16, 1, 0.3, 1] }}
-        className="absolute inset-0"
+        className="absolute inset-x-0 top-0 h-[58vh] md:inset-0 md:h-full"
       >
+        {/* On mobile the photo fills only the upper hero and fades into ink,
+            so it shows far more of the scene (less crop) and the copy below
+            sits on a clean dark ground instead of a busy image. */}
         <img
           src="/images/hero-plant.jpg?v=2"
           alt="Premier Chemical Solution tanker truck at a chemical plant at dusk"
-          className="h-full w-full object-cover object-[75%_center] md:object-center"
+          className="h-full w-full object-cover object-[72%_center] md:object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-ink/10 md:via-ink/75 md:to-ink/30" />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/50 via-ink/10 to-transparent md:from-ink/90 md:via-ink/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/45 to-ink/10 md:hidden" />
+        <div className="absolute inset-0 hidden bg-gradient-to-t from-ink via-ink/75 to-ink/30 md:block" />
+        <div className="absolute inset-0 hidden bg-gradient-to-r from-ink/90 via-ink/20 to-transparent md:block" />
         {/* cinematic vignette for depth */}
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 hidden md:block"
           style={{
             background:
               "radial-gradient(120% 90% at 50% 40%, transparent 55%, rgba(0,0,0,0.55) 100%)",
