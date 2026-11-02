@@ -35,6 +35,25 @@ export default function Footer() {
           <span className="font-sans text-[11px] uppercase tracking-wider">
             Nitro, WV · Adger, AL · 205-615-3225 · Flotation Reagents
           </span>
+          <span className="shrink-0 whitespace-nowrap">
+            <a
+              href="https://itekdesigns.com"
+              target="_blank"
+              rel="noopener"
+              className="group inline-flex min-h-[44px] items-center gap-[0.6ch] text-silver-400 transition-colors hover:text-paper"
+            >
+              Created by
+              <img
+                src="/itek-designs.png"
+                alt="ITEK Designs"
+                width="59"
+                height="22"
+                loading="lazy"
+                decoding="async"
+                className="h-[22px] w-auto opacity-80 transition-opacity group-hover:opacity-100"
+              />
+            </a>
+          </span>
         </div>
       </div>
     </footer>
